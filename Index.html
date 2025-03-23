@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00af0c;
+            color: #141514;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .sorry-message {
+            background-color: #fafafa;
+            padding: 20px;
+            border: 2px solid #ecebeb;
+            border-radius: 5px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        button {
+            background-color: #721c24;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #f1b0b7;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sorry!</h1>
+    <div class="sorry-message" id="sorry-message">
+        <!-- Dynamic content will go here -->
+    </div>
+    <script>
+        let messageContainer = document.getElementById('sorry-message');
+        let repeatedMessage = '';
+        
+        // Repeat "Sorry" 500 times
+        for (let i = 0; i < 50000; i++) {
+            repeatedMessage += 'SORRY SHAIK ARSHIYA ANJUM. ';
+        }
+
+        // Add the repeated message to the page
+        messageContainer.innerHTML = repeatedMessage;
+    </script>
+</body>
+</html>
